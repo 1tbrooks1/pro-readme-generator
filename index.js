@@ -52,7 +52,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license would you like for your project?",
-        choices: ["MIT", "Academic"] 
+        choices: ["MIT", "ISC", "Apache", "BSD"] 
     },
 ];
 
