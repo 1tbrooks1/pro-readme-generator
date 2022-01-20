@@ -23,28 +23,39 @@ function generateMarkdown(answers) {
   console.log(answers);
   return `# ${answers.title}
 
-## 📚 Table of Contents:
-- [Description](#Description)
-- [Installation](#Installation)
-- [License](#License)
-- [GitHub](#Github)
-- [Email](#Email)
-
+  
+  ${renderLicenseBadge(answers.license)}
 
   ## ✏️ Description
   ${answers.description}
 
+## 📚 Table of Contents:
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributors](#Contributors)
+- [Tests](#Tests)
+- [Questions](#Questions)
+
   ## 🔨  Installation
   ${answers.install}
 
-  ##  License
+  ## 💻 Usage
+  ${answers.usage}
+
+  ## License
   ${renderLicenseBadge(answers.license)}
 
-  ## GitHub
-  ${answers.username}
+  ## 👪 Contributors
+  ${answers.contributors}
 
-  ## 📧 Email
-  ${answers.email}`;
+  ## 📔 Tests
+  ${answers.test}
+
+  ## ❓ Questions
+  If you have any questions in regards to this project \n
+  You can contact me on GitHub at: https://github.com/${answers.username} \n
+  You can also email me at: ${answers.email}`
 }
 
 module.exports = generateMarkdown;
