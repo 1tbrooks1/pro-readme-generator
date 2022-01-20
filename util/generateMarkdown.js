@@ -23,12 +23,12 @@ function generateMarkdown(answers) {
   console.log(answers);
   return `# ${answers.title}
 
-  ## 📚 Table of Contents:
-    * [Description](#Description)
-    * [Installation](#Installation)
-    * [License](#License)
-    * [GitHub](#Github)
-    * [Email](#Email)
+## 📚 Table of Contents:
+- [Description](#Description)
+- [Installation](#Installation)
+- [License](#License)
+- [GitHub](#Github)
+- [Email](#Email)
 
 
   ## ✏️ Description
