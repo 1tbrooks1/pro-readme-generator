@@ -31,12 +31,12 @@ ${renderLicenseBadge(answers.license)}
 ${answers.description}
    
 ## Table of Contents:
-- [Screenshots](#Screenshots)
-- [Technologies](#Technologies)
-- [Usage](#Usage)
+- [Description](#Description)
 - [Installation](#Installation)
-- [Feedback](#Feedback)
-- [Future Development](#Future_Development)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Questions](#Questions)
 
 ## 🔨  Installation
 ${answers.install}
