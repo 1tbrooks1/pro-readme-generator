@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "none") {
+  if (license === "None") {
     return " ";
   }
   if (license === "MIT") {
@@ -20,42 +20,44 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-  console.log(answers);
-  return `# ${answers.title}
+  //console.log(answers);
+  return `
+# ${answers.title}
 
   
-  ${renderLicenseBadge(answers.license)}
+${renderLicenseBadge(answers.license)}
 
-  ## ✏️ Description
-  ${answers.description}
-
-## 📚 Table of Contents:
-- [Description](#Description)
-- [Installation](#Installation)
+## ✏️ Description
+${answers.description}
+   
+## Table of Contents:
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
 - [Usage](#Usage)
-- [Contributors](#Contributors)
-- [Tests](#Tests)
-- [Questions](#Questions)
+- [Installation](#Installation)
+- [Feedback](#Feedback)
+- [Future Development](#Future_Development)
 
-  ## 🔨  Installation
-  ${answers.install}
+## 🔨  Installation
+${answers.install}
 
-  ## 💻 Usage
-  ${answers.usage}
+## 💻 Usage
+${answers.usage}
 
-  ## License
-  ${renderLicenseBadge(answers.license)}
+## License
+This project is covered under the 
+${renderLicenseBadge(answers.license)} license.
 
-  ## 👪 Contributors
-  ${answers.contributors}
+## 👪 Contributing
+${answers.contributors}
 
-  ## 📔 Tests
-  ${answers.test}
+## 📔 Tests
+${answers.test}
 
-  ## ❓ Questions
-  If you have any questions in regards to this project \n
-  You can contact me on GitHub at: https://github.com/${answers.username} \n
-  You can also email me at: ${answers.email}`
+## ❓ Questions
+If you have any questions in regards to this project \n
+You can contact me on  GitHub at: https://github.com/${answers.username} \n
+You can also 📧 email me at: ${answers.email} for any other questions`
 }
 
 module.exports = generateMarkdown;

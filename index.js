@@ -87,8 +87,8 @@ function init() {
         questions
     )
     .then((answers) => {
-        console.log("✔️  Generating README now!");
         writeToFile("README.md", generateMarkdown(answers));
+        console.log("✔️  Generating README now!");
     })
 }
 
