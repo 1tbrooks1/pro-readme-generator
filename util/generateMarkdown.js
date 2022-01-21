@@ -16,39 +16,38 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-  //console.log(answers);
   return `
 # ${answers.title}
 
 ${renderLicenseBadge(answers.license)}
 
-## ✏️ Description
+## Description
 ${answers.description}
    
 ## Table of Contents:
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Questions](#Questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
-## 🔨  Installation
+## Installation
 ${answers.install}
 
-## 💻 Usage
+## Usage
 ${answers.usage}
 
 ## License
 This project is covered under the ${answers.license} license.
 
-## 👪 Contributing
+## Contributing
 ${answers.contributors}
 
-## 📔 Tests
+## Tests
 ${answers.test}
 
-## ❓ Questions
+## Questions
 If you have any questions in regards to this project \n
 You can contact me on GitHub at: https://github.com/${answers.username} \n
 You can also 📧 email me at: ${answers.email} for any other questions`
