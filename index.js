@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const path = require("path");
 const fs = require("fs");
 const generateMarkdown = require("./util/generateMarkdown");
 
@@ -40,16 +39,16 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license did you choose for your project?",
-        choices: ["MIT", "ISC", "Apache", "BSD", "None"] 
+        choices: ["MIT", "ISC", "Apache", "BSD"] 
     },
     {
         type: "input",
-        message: "Who, if any, were the contributors on this project?",
+        message: "How could someone contribute to this project?",
         name: "contributors"
     },
     {
         type: "input",
-        message: "Is there a test included?",
+        message: "Enter instructions if someone wanted to test your project:",
         name: "test"
     },
     {
@@ -72,8 +71,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-const writeToFile = (data) => {
-    fs.writeFile("./dist/README.md", data, err => {
+const writeToFile = (answers) => {
+    fs.writeFile("./dist/README.md", answers, err => {
         if (err) {
             console.log(err);
             return;
@@ -91,6 +90,7 @@ function init() {
         console.log("✔️  Generating README now!");
     })
 }
+
 
 // Function call to initialize app
 init();
