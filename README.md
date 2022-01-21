@@ -44,6 +44,6 @@ The user will need to install the latest version of  Node.js, an IDE (ex: VS Cod
 Tobby Brooks
 
 ## Contact
-For any questions in regard to this project
-You can contact me on GitHub at https://github.com/1tbrooks1
+For any questions in regard to this project <br>
+You can contact me on GitHub at https://github.com/1tbrooks1 <br>
 You can also contact me by email: tbrooks321@yahoo.com

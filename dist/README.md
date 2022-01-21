@@ -7,12 +7,15 @@
 This is a node.js application that takes the users input from a series of questions and uses them to generate a professional README.md file that the user can use on their project.
    
 ## Table of Contents:
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
+- [README Generator](#readme-generator)
+  - [Description](#description)
+  - [Table of Contents:](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Installation
 The user will need to install the latest version of  Node.js, an IDE (ex: VS Code), and  they will also need to be able to use GitBash/Command Line Interface.
